@@ -44,7 +44,7 @@ async function findMovie() {
     movieInput.value = ""
 
     async function getDetails(_id) {
-        currentMovieId = _id
+        //currentMovieId = _id
         const modalWindow = document.getElementById("openModal")
         modalWindow.style.display = "flex"
 
