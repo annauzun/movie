@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Movie App</title>
+        <link rel="stylesheet" href="/src/styles.css" />
+        <script type="module" src="/src/app.js"></script>
+    </head>
+    <body
+        class="flex flex-col relative w-full h-auto mx-auto px-40 py-10 gap-10 items-center bg-[url('/src/bg.jpg')] bg-no-repeat bg-cover"
+    >
+        <p class="text-5xl text-white italic">Find a movie</p>
+        <div class="flex gap-10">
+            <input
+                type="text"
+                class="border-2 border-grey-600 rounded-md p-2"
+            />
+            <button id="search" class="bg-green-600 text-white px-4 rounded-md">
+                Search
+            </button>
+        </div>
+        <div
+            id="openModal"
+            class="bg-white rounded-xl p-6 w-2/5 h-1/2 flex-col fixed inset-0 m-auto justify-between hidden"
+        >
+            <div>
+                <p class="text-xl font-semibold text-sky-800 text-center mb-4">
+                    Movie Details
+                </p>
+                <div
+                    id="modalContainer"
+                    class="gap-4 flex-col justify-between"
+                ></div>
+            </div>
+            <button
+                id="closeModal"
+                class="bg-green-600 text-white p-2 rounded-md"
+            >
+                Close
+            </button>
+        </div>
+
+        <div
+            id="container"
+            class="mx-auto mt-10 gap-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+        ></div>
+    </body>
+</html>
