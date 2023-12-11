@@ -23,7 +23,7 @@ async function findMovie() {
 
     data.contents.map((content) => {
         container.innerHTML += `
-		<div class="flex flex-col justify-between h-[500px] md:h-[440px] lg:h-[300px] w-full rounded-lg shadow-xl p-5 bg-slate-200/50">
+		<div class="flex flex-col justify-between h-[200px] md:h-[250px] lg:h-[300px] w-full rounded-lg shadow-xl p-5 bg-slate-200/50">
 			<div class="font-bold text-xl text-gray-800 uppercase ">${content.title}</div>
 			<img src="${content.poster_path}" class=" w-full h-1/4 rounded-t-xl p-1 "/>
 			<div class="font-semibold text-md text-gray-700 mb-5">${content.release_date}</div>

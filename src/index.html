@@ -8,15 +8,15 @@
         <script type="module" src="/src/app.js"></script>
     </head>
     <body
-        class="flex flex-col relative w-full h-auto mx-auto px-40 py-10 gap-10 items-center bg-[url('/src/bg.jpg')] bg-no-repeat bg-cover"
+        class="flex flex-col relative w-full h-auto mx-auto  py-10 gap-4 md:gap-6 lg:gap-8 items-center bg-[url('/src/bg.jpg')] bg-no-repeat bg-cover"
     >
-        <p class="text-5xl text-white italic">Find a movie</p>
-        <div class="flex gap-10">
+        <p class="text-xl md:text-3xl lg:text-5xl text-white italic">Find a movie</p>
+        <div class="flex gap-4 md:gap-6 lg:gap-8 mx-auto">
             <input
                 type="text"
-                class="border-2 border-grey-600 rounded-md p-2"
+                class="border-1 border-grey-600 rounded-md p-2 scale-50 md:scale-75 lg:scale-100"
             />
-            <button id="search" class="bg-green-600 text-white px-4 rounded-md">
+            <button id="search" class="bg-green-600 text-white px-4 rounded-md scale-50 md:scale-75 lg:scale-100">
                 Search
             </button>
         </div>
